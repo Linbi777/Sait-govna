@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* Внутриний отступ */
+    padding: 0;
+    /* Внешний отступ */
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: regular;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+
+.section{
+    padding: 5rem 0rem;
+}
+/*=============== HEADER & NAV ===============*/
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: box-shadow .3s, background .4s;
+}
+
+.nav{
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img{
+    width: 80px;
+    height: 100%;
+  }
+
+.nav__burger,
+.nav__shopcart,
+.nav__search,
+.nav__close{
+  display: flex;
+  width: 25px;
+  cursor: pointer;
+}
+
+.nav__buttons{
+    display: flex;
+    column-gap: 1rem;
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      background-color: rgb(190, 190, 190);
+      width: 100%;
+      box-shadow: 0 8px 20px hsla(19, 64%, 24%, .1);
+      padding-block: 3.5rem;
+      transition: top .4s;
+    }
+  }
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+.nav__link{
+    position: relative;
+    color: black;
+    font-weight: 400;
+    transition: color .4s;
+  }
+
+  .nav__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background-color: black; 
+    transition: width 0.5s; 
+}
+.nav__link:hover:after{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px; 
+    background-color: rgb(0, 0, 0); 
+    transition: width 0.5s;
+}
+
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }  
+
+/* Show menu */
+.show-menu{
+    top: 0;
+  }
+/* Change background header */
+
+/*=============== MAIN-HOME ===============*/
+.home{
+    position: relative;
+}
+.home__container{
+    display: grid;
+    grid-template: 280px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home__subtitle{
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(145, 124, 91, 0.623);
+}
+.home__title{
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.home__list{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.home__item{
+    margin-right: 0.2rem;
+}
+.home__item:last-child{
+    margin-right: 0;
+}
+.home__button{
+    font-size: 16px;
+    margin-right: .5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+}
+.home__button:last-child{
+    margin-right: 0;
+}
+.home__button:hover{
+    content: "";
+    color: #ffff;
+    background: black;
+    transition: 0.3s;
+}
+/*=============== CARDS ===============*/
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(1,250px);
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: rgb(233, 232, 232);
+    padding: 4rem;
+    box-shadow: 0 2px 8px hsla(19, 64%, 48%, .08);
+    border-radius: 1rem;
+    text-align: center;
+}
+.card__img{
+    width: 150px;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    margin: 0 auto;
+}
+
+.card__button{
+    position: absolute;
+    background-color: #0000;
+    background: #000;
+    width: 220px;
+    height: 28px;
+    bottom: -0.5rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__button-img{
+    margin-right: 1rem;
+    width: 18px;
+}
+.card__button-img:last-child{
+    margin-right: 0;
+}
+.info-row1{
+    display: flex;
+    align-items: center;
+    column-gap: 7.5rem;
+    position: absolute;
+    bottom: -2.2rem;
+    left: 0;
+}
+.info-row2{
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+}
+.info__title{
+    font-size: 20px;
+}
+
+.info__old-price{
+    color: #bebebe;
+}
+.info__new-price{
+    margin-left: 0.3rem;
+}
+/*=============== CARD-STARS ===============*/
+.info__stars{
+    overflow: hidden;
+	margin: 0 0;
+    display: inline-block;
+	font-size: 0;
+}
+
+.info__stars:not(:checked) > input {
+	display: none;
+}
+
+.info__stars:not(:checked) > label {
+	float: right;
+	width: 16px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 16px;
+	color: lightgrey;
+}
+.info__stars:not(:checked) > label:before {
+	content: '★';
+}
+.info__stars > input:checked ~ label {
+	color: gold;
+}
+.info__stars:not(:checked) > label:hover,
+.info__stars:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.info__stars > input:checked + label:hover,
+.info__stars > input:checked + label:hover ~ label,
+.info__stars > input:checked ~ label:hover,
+.info__stars > input:checked ~ label:hover ~ label,
+.info__stars > label:hover ~ input:checked ~ label {
+	color: gold;
+}
+.info__stars > label:active {
+	position: relative;
+}
+
+/*=============== FOOTER ===============*/
+.footer{
+    background: #bebebe;
+    position: relative;
+    padding-block:3rem 3rem;
+    overflow: hidden;
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.footer__logo img{
+    width: 80px;
+}
+.footer__title{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer__subtitle{
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: #858585;
+    text-align: center;
+}
+
+.footer__form{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: #bebebe;
+}
+.footer__input{
+    border: #858585 solid 1px;
+    border-radius: .2rem;
+    background-color: #bebebe;
+    padding: .5rem 1rem;
+}
+.footer__button{
+    background-color: #bebebe;
+    border: #858585 solid 1px;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    color: #858585;
+    cursor: pointer;
+}
+
+.footer__button:hover{
+    content: "";
+    background: #000;
+    transition: .5s;
+}
+
+
+/* For small devices */
+@media screen and (max-width: 340px){
+    .container{
+      margin-inline: 1rem;
+    }
+  
+    .section{
+      padding-block: 4rem 1rem;
+    }
+  
+    .home__title{
+      font-size: 2rem;
+    }
+  }
+
+/*=============== BREAKPOINTS ===============*/ 
+/* For medium devices */
+@media screen and (min-width: 767px){
+    .nav{
+      column-gap: 3rem;
+    }
+    
+    .nav__burger,
+    .nav__close{
+      display: none;
+    }
+  
+    .nav__list{
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+    .nav__menu{
+      margin-left: auto;
+      box-shadow: none;
+    }
+
+    .cards__container{
+        grid-template-columns: repeat(2, 250px);
+        column-gap: 2rem;
+    }
+  }
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+  
+    .nav{
+        height: 4.5rem;
+    }
+
+    .home__container{
+      position: relative;
+      padding-block: 4rem 3rem;
+      grid-template-columns: .7fr;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home__container-top{
+        display: flex;
+        
+    }
+
+    .home__subtitle{
+        font-size: 1.5rem;
+    
+    }
+    .home__container-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+    .home__title{
+        font-size: 2.5rem;
+    }
+    
+    .home__button{
+        font-size: 1.5rem;
+    }
+    
+    .cards__container{
+        grid-template-columns: repeat(3,270px);
+    }
+
+    .footer__form{
+
+    }
+
+    .footer__title{
+        font-size: 1.7rem;
+    }
+    .footer__subtitle{
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1064px){
+    .container{
+      margin-inline: auto;
+    }
+  }

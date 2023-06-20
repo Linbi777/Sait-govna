@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+ <!-- HEADER -->
+ <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            <img src="./assets/img/logo.svg" alt="logo image">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link active-link">Главная</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Каталог</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Блог</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Решение</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <img src="./assets/img/close-button.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="nav__buttons">
+          
+            <div class="nav__search">
+                <img src="./assets/img/search-interface-symbol.png" alt="">
+            </div>
+
+            <div class="nav__shopcart">
+                <img src="./assets/img/shopping-cart.png" alt="">
+            </div>
+            
+            <!-- Burger button -->
+            <div class="nav__burger" id="nav-burger">
+                <img src="./assets/img/burger.svg" alt="">
+            </div>
+        </div>
+    </nav>
+</header>
+    <main class="main">
+        <section class="home section">
+            <div class="home__container container grid">
+                <div class="home__container-top">
+                    <span class="home__subtitle">КАТАЛОГ</span>
+                </div><br>
+                <div class="home__container-bottom ">
+                    <h1 class="home__title" >Лучшие новинки</h1>
+                    <ul class="home__list">
+                        <li class="home__item">
+                            <button class="home__button">Мебель</button>
+                        </li>
+                        <li class="home__item">
+                            <button class="home__button">Свет</button>
+                        </li>
+                        <li class="home__item">
+                            <button class="home__button">Декор</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CARDS -->
+            <div class="cards__container container">
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/img-card.png" alt="" class="card__img">
+                    <div class="card__button">
+                        <img src="./assets/img/refresh-icon.svg" alt="" class="card__button-img">
+                        <img src="./assets/img/like-icon.png" alt="" class="card__button-img">
+                        <img src="./assets/img/shop-icon.png" alt="" class="card__button-img">
+                    </div>
+                    <div class="card__info">
+                        <div class="info-row1"> 
+                            <span class="info__title">
+                                Стул
+                            </span>
+                            <samp class="info__stars">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>	
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>    
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>  
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>    
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </samp>
+                        </div>
+                        <div class="info-row2">
+                            <span class="info__old-price">
+                                <strike>4000₽</strike>
+                            </span>
+                            <span class="info__new-price">
+                                3500₽
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="./assets/img/logo.svg" alt="logo image">
+                </a>
+                <h2 class="footer__title">
+                    Подпишитесь на новости
+                </h2>
+
+                <p class="footer__subtitle">
+                    Оставьте совй email и вы будите получать<br>
+                    актуальную информацию о наших акциях и <br>
+                    новинках
+                </p>
+            </div>
+            <form action="" class="footer__form">
+                <input type="email" placeholder="Enter email" class="footer__input">
+                <br>
+                <button class="footer__button">
+                    ПОДПИСАТЬСЯ 
+                </button>
+            </form>
+        </div>
+    </footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
